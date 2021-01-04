@@ -296,8 +296,13 @@ body {
   margin-top: 30px;
   margin-bottom: 45px;
 }
-.services p {
+.service_text {
+  margin-top: 50px;
+  line-height: 170%;
+  font-weight: bold;
   display: none;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
 .services_title {
   display: flex;
@@ -341,10 +346,26 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.review_title h3 {
+.review_title h3 ::after {
+  content: 'Geeks';
   font-size: 25px;
   color: white;
+  animation: animateName infinite 3s;
 }
+@keyframes animateName {
+  0% {
+    content: 'Geeks';
+  }
+
+  50% {
+    content: 'for';
+  }
+
+  75% {
+    content: 'Geeks';
+  }
+}
+
 .review_title h4 {
   font-size: 14px;
   font-weight: 100;
@@ -362,18 +383,6 @@ body {
 }
 .review_text span {
   font-weight: 700;
-}
-.review_lines {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.review_line {
-  width: 30px;
-  height: 1.5px;
-  background-color: white;
 }
 
 /* footer */
