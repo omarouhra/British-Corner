@@ -4,17 +4,6 @@ const navSlide = () => {
   const nav = document.querySelector('.nav-links')
   const navLinks = document.querySelectorAll('.nav-links li')
 
-  // services toggle
-  const btn1 = document.querySelector('#button1')
-  const btn2 = document.querySelector('#button2')
-  const btn3 = document.querySelector('#button3')
-  const btn4 = document.querySelector('#button4')
-
-  const serviceTitle = document.querySelector('.services_title h3')
-  const firstText = document.querySelector('.first')
-  const secondText = document.querySelector('.second')
-  const thirdText = document.querySelector('.third')
-  const fourthText = document.querySelector('.fourth')
 
   //  Toogle nav
   burger.addEventListener('click', () => {
@@ -25,44 +14,129 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = ''
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.5
-        }s`
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5
+          }s`
       }
+      
     })
     //   Burger animation
     burger.classList.toggle('is-active')
-  })
 
-  // service 1
-  btn1.addEventListener('click', () => {
-    if (firstText.style.display) {
-      // serviceTitle.style.fontWeight = ''
-      firstText.style.display = ''
-      btn1.style.transform = ''
-    } else {
-      // secondText.style.display = 'none'
-      // thirdText.style.display = 'none'
-      // fourthText.style.display = 'none'
-      firstText.style.display = 'block'
-      firstText.style.opacity = 1
-      btn1.style.transform = 'rotate(90deg)'
-      // serviceTitle.style.fontWeight = '900'
-    }
-  })
-  // service 2
-  btn2.addEventListener('click', () => {
-    if (secondText.style.display) {
-      // serviceTitle.style.fontWeight = ''
-      secondText.style.display = ''
-      btn2.style.transform = ''
-    } else {
-      secondText.style.display = 'block'
-      secondText.style.opacity = 1
-      btn2.style.transform = 'rotate(90deg)'
-      // serviceTitle.style.fontWeight = '900'
-    }
+  }
+  )
+}
+ // scroll animation
+const navLinkTouched = () => {
+  const aboutUsLink = document.querySelector('.aboutUs-tapped');
+  const servicesLink = document.querySelector('.services-tapped');
+  const reviewsLink = document.querySelector('.reviews-tapped');
+  const contactLink = document.querySelector('.contact-tapped');
+  const nav = document.querySelector('.nav-links');
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+
+  aboutUsLink.addEventListener('click', () => {
+    //close the nav
+    nav.classList.toggle('nav-active');
+    //close the burger   
+    burger.classList.toggle('is-active');
+    // Animate Links again to close
+    navLinks.forEach((link, index) => {
+      //reset it, acts like a toggle
+      if (link.style.animation) {
+        link.style.animation = '';
+        link.style.opacity = '1';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s`
+        link.style.opacity = '0';
+      }
+    }); 
+  });
+
+  ///////
+  servicesLink.addEventListener('click', () => {
+    //close the nav
+    nav.classList.toggle('nav-active');
+    //close the burger   
+    burger.classList.toggle('is-active');
+    // Animate Links again to close
+    navLinks.forEach((link, index) => {
+      //reset it, acts like a toggle
+      if (link.style.animation) {
+        link.style.animation = '';
+        link.style.opacity = '1';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index/ 7}s`
+        link.style.opacity = '0';
+      }
+    });        
+  });
+  ///////
+  reviewsLink.addEventListener('click', () => {
+    //close the nav
+    nav.classList.toggle('nav-active');
+    //close the burger   
+    burger.classList.toggle('is-active');
+    // Animate Links again to close
+    navLinks.forEach((link, index) => {
+      //reset it, acts like a toggle
+      if (link.style.animation) {
+        link.style.animation = '';
+        link.style.opacity = '1';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s`
+        link.style.opacity = '0';
+      }
+    });        
+  });
+  //////
+  contactLink.addEventListener('click', () => {
+    //close the nav
+    nav.classList.toggle('nav-active');
+    //close the burger   
+    burger.classList.toggle('is-active');
+    // Animate Links again to close
+    navLinks.forEach((link, index) => {
+      //reset it, acts like a toggle
+      if (link.style.animation) {
+        link.style.animation = '';
+        link.style.opacity = '1';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s`
+        link.style.opacity = '0';
+      }
+    });        
+  });
+
+}  
+  // services toggle
+const triggerText = () => {
+  // services toggle
+  const triggers = document.getElementsByClassName('trigger')
+  const text = document.querySelectorAll('.service_text')
+  const triggersArray = Array.from(triggers);
+  const title = document.getElementsByName('trigger h3')
+  const titleArray =Array.from('title')
+
+  triggersArray.forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      const answer = trigger.lastElementChild;
+      answer.classList.toggle('service_text--visible');
+      trigger.classList.toggle('trigger--active');
+     })
   })
 }
 
-navSlide()
+// review carousel 
+
+
+const app = () => {
+  navSlide();
+  triggerText();
+  navLinkTouched();
+
+}
+
+
+      app();

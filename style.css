@@ -7,7 +7,9 @@
   --first-bakground-color: #fae7e3;
   --second-background-color: #e8f7fd;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 /* reset */
 * {
   margin: 0;
@@ -17,6 +19,9 @@
 }
 /* margin class */
 .margin {
+  margin: 100px 20px;
+}
+.margin-welcome {
   margin: 100px 20px;
 }
 /* padding */
@@ -45,7 +50,7 @@ body {
 .site-nav {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-between;
 }
 .nav-links {
@@ -289,7 +294,7 @@ body {
   font-weight: 900;
   text-transform: uppercase;
 }
-.what_we_do_line {
+.divider {
   width: auto;
   height: 2px;
   background-color: var(--clear-black);
@@ -298,21 +303,54 @@ body {
 }
 .service_text {
   margin-top: 50px;
+  height: 0px;
   line-height: 170%;
-  font-weight: bold;
-  display: none;
+  font-weight: 300;
+  padding-bottom: 0;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  visibility: hidden;
+  transition: all 0.3s ;
 }
-.services_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+
+.service_text--visible {
+  opacity: 1;
+  height:auto;
+  visibility: visible;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  line-height: 170%;
+
 }
-.services_title h3 {
-  font-size: 25px;
+.trigger{
+  margin: 0;
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+  user-select: none;
+}
+.trigger::after {
+  content: '\25BE';
+  position: absolute;
+  right: 0;
+  top: 0;
+  color:var(--primary);
+  font-size: 30px;
+  transition:transform 0.5s ;
+}
+.trigger--active::after{
+  transform: rotate(-180deg);
+}
+.trigger h3 {
+  font-size: 20px;
   font-weight: 100;
+}
+.trigger--active h3 {
+  font-weight: 900;
+}
+.trigger a {
+  float: right;
+  top:0;
 }
 
 /* review section */
@@ -346,25 +384,12 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.review_title h3 ::after {
-  content: 'Geeks';
+.review_title h3  {
   font-size: 25px;
   color: white;
-  animation: animateName infinite 3s;
+  margin-bottom: 20px;
 }
-@keyframes animateName {
-  0% {
-    content: 'Geeks';
-  }
 
-  50% {
-    content: 'for';
-  }
-
-  75% {
-    content: 'Geeks';
-  }
-}
 
 .review_title h4 {
   font-size: 14px;
@@ -460,7 +485,7 @@ footer h4 {
   .aboutUs_first_section p {
     font-size: 30px;
   }
-  .services_title h3 {
+  .trigger h3 {
     font-size: 30px;
   }
   .review_title h3 {
@@ -484,12 +509,15 @@ footer h4 {
     flex-direction: row;
     justify-content: space-around;
   }
-}
+}   
 
 /* big tablet style & laptops */
 @media screen and (min-width: 960px) {
   .margin {
-    margin: 150px 50px;
+    margin: 200px 50px;
+  }
+  .margin-welcome{
+    margin: 0 50px;
   }
   .padding {
     padding: 50px 50px 0 50px;
@@ -510,7 +538,7 @@ footer h4 {
   }
   #contact_button {
     display: block;
-    padding: 15px 40px 15px 40px;
+    padding:15px 40px 15px 40px ;
     background-color: var(--secondary);
     color: white;
     font-weight: 600;
@@ -518,6 +546,7 @@ footer h4 {
   #contact_button :hover {
     background-color: var(--primary);
   }
+
   .burger {
     all: unset;
     display: none;
@@ -529,7 +558,6 @@ footer h4 {
     gap: 30px;
     font-size: 16px;
     font-weight: 600;
-    align-self: center;
   }
   .nav-links li {
     all: unset;
@@ -544,7 +572,7 @@ footer h4 {
     font-size: 16px;
     font-weight: 600;
   }
-  #contact {
+  #contact-link {
     display: none;
   }
 }
@@ -552,10 +580,13 @@ footer h4 {
 /* larger screens style */
 @media screen and (min-width: 1200px) {
   .margin {
-    margin: 200px auto;
+    margin: 250px auto;
+  }
+  .margin-welcome{
+    margin:100px auto;
   }
   .site-nav {
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 0;
   }
   .welcome button {
@@ -578,6 +609,9 @@ footer h4 {
   }
   .what_we_do {
     max-width: 800px;
+  }
+  .service_text{
+    font-size: 20px;
   }
   .slogan_section p {
     font-size: 35px;

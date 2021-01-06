@@ -1,303 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>British Corner</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="site-nav padding">
-      <img
-        class="logo"
-        src="./assets/Logo Vector.png"
-        alt="logo_British_Corner"
-      />
-      <ul class="nav-links">
-        <li><a href="#aboutUs">About us</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Reviews</a></li>
 
-        <li id="contact"><a href="">contact</a></li>
-      </ul>
-      <a id="contact_button" href="">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600;1,700; 1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>British Corner</title>
+</head>
 
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+<body>
+  <!-- navbar -->
+  <nav class="site-nav padding">
+    <img class="logo" src="./assets/Logo Vector.png" alt="logo_British_Corner" />
+    <ul class="nav-links">
+      <li><a class="aboutUs-tapped" href="#aboutUs">About us</a></li>
+      <li><a class="services-tapped" href="#services">Services</a></li>
+      <li><a class="reviews-tapped" href="#reviews">Reviews</a></li>
+      <li class="contact-tapped"><a id="contact-link" href="#contact">contact</a></li>
+    </ul>
+    <a id="contact_button" href="#contact">Contact</a>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+
+  <!-- leading -->
+  <section class="welcome margin-welcome">
+    <div>
+      <div class="title">
+        <div class="title_line"></div>
+        <h2>British Corner</h2>
       </div>
-    </nav>
+      <h1 class="leading_text">
+        Study in the
+        <span>UK</span>
+      </h1>
+      <h2 class="leading_paragraph">
+        education consultancy
+        <span>&</span>
+        student recruitment
+      </h2>
+      <button>
+        BOOK A
+        <span>FREE</span>
+        CONSULTAION NOW !!
+      </button>
+    </div>
+    <div>
+      <img id="hero_pic" src="./assets/hero-pic.png" width="489px" alt="hero_image" />
+    </div>
+  </section>
 
-    <!-- hero section -->
-
-    <!-- leading -->
-    <section class="welcome margin">
+  <!-- hero bottom  section-->
+  <section class="bottom_hero_section margin-welcome">
+    <div class="question">
+      <img src="./assets/expert.png" alt="talk to our expert" />
       <div>
-        <div class="title">
-          <div class="title_line"></div>
-          <h2>British Corner</h2>
-        </div>
-        <h1 class="leading_text">
-          Study in the
-          <span>UK</span>
-        </h1>
-        <h2 class="leading_paragraph">
-          education consultancy
-          <span>&</span>
-          student recruitment
-        </h2>
-        <button>
-          BOOK A
-          <span>FREE</span>
-          CONSULTAION NOW !!
-        </button>
-      </div>
-      <div>
-        <img
-          id="hero_pic"
-          src="./assets/hero-pic.png"
-          width="489px"
-          alt="hero_image"
-        />
-      </div>
-    </section>
-
-    <!-- hero bottom  section-->
-    <section class="bottom_hero_section margin">
-      <div class="question">
-        <img src="./assets/expert.png" alt="talk to our expert" />
-        <div>
-          <p>Question?</p>
-          <div class="bold"><p>Talk to our experts</p></div>
+        <p>Question?</p>
+        <div class="bold">
+          <p>Talk to our experts</p>
         </div>
       </div>
-      <div class="socials_icon">
-        <img src="./assets/insta.png" alt="British_Corner_instagram" />
-        <img src="./assets/facebook.png" alt="British_Corner_facebook" />
-        <img src="./assets/whatsaap.png" alt="British_Corner_whatsaap" />
-      </div>
-    </section>
+    </div>
+    <div class="socials_icon">
+      <img src="./assets/insta.png" alt="British_Corner_instagram" />
+      <img src="./assets/facebook.png" alt="British_Corner_facebook" />
+      <img src="./assets/whatsaap.png" alt="British_Corner_whatsaap" />
+    </div>
+  </section>
 
-    <!-- slogan text -->
-    <section class="slogan_section margin">
+  <!-- slogan text -->
+  <section class="slogan_section margin">
+    <p>
+      We help Student to make good
+      <span>choices</span>
+      and get the best
+      <span>education</span>
+      experience.
+    </p>
+  </section>
+
+  <!-- about us  -->
+  <section id="aboutUs" class="aboutUs_section margin">
+    <div class="aboutUs_first_section">
+      <div class="aboutUs_line"></div>
       <p>
-        We help Student to make good
-        <span>choices</span>
-        and get the best
-        <span>education</span>
-        experience.
+        <span>British corner</span>
+        is an agency based in Morocco that linked the students who wish to
+        study abroad with the best universities in
+        <span>UK</span>
       </p>
-    </section>
+    </div>
 
-    <!-- about us  -->
-    <section class="aboutUs_section margin">
-      <div class="aboutUs_first_section">
-        <div class="aboutUs_line"></div>
-        <p>
-          <span>British corner</span>
-          is an agency based in Morocco that linked the students who wish to
-          study abroad with the best universities in
-          <span>UK</span>
-        </p>
-      </div>
+    <div class="aboutUs_second_section" id="aboutUS">
+      <p>
+        Our services range from
+        <span>A</span>
+        to
+        <span>Z</span>
+        <br />
+        from consulting students on higher education study option abroad, to
+        assiste with universities applications to visa and accommodation
+        advice.
+      </p>
+    </div>
+  </section>
 
-      <div class="aboutUs_second_section" id="aboutUS">
-        <!-- <img id="arrow" src="./assets/arrow1.png" ; alt="arrow_icon" /> -->
-        <p>
-          Our services range from
-          <span>A</span>
-          to
-          <span>Z</span>
-          <br />
-          from consulting students on higher education study option abroad, to
-          assiste with universities applications to visa and accommodation
-          advice.
-        </p>
-      </div>
-    </section>
 
-    <!-- what we do  -->
-    <section class="what_we_do margin">
-      <h3>What we do ?</h3>
-      <div class="what_we_do_line"></div>
+  <!-- what we do  -->
+  <section id="services" class="what_we_do margin">
+    <h3>What we do ?</h3>
+    <div class="divider"></div>
 
-      <!-- service 1 -->
-      <div class="services">
-        <div class="services_title">
-          <h3>University enrolment</h3>
-          <a id="button1"><img src="./assets/icon1.png" alt="icon" /></a>
-        </div>
-        <p class="service_text first">
+    <div class="services">
+      <div class="trigger">
+        <h3>University enrolment</h3>
+        <p class="service_text ">
           Our expert counsellors are always on hand to help you with every
           aspect of your university application. We offer support throughout the
           entire process and can help you regardless of the stage you are at. by
           offering
-          <br/>
-          <br/>
-
-          -Face-to-face OR online meetings with professional consultant to
-          discuss your education plans
-          <br />
-          -Providing all education possibilities that fit your experience
-          and future career
-          <br />
-          -Help with filling up the admission application
-          <br />
-          -Guiding with preparation of required documents
-          <br />
-          -Review and edit your CV
-          <br />
-          -Review and edit your cover letter
-          <br />
-          -Interview coaching
-          <br />
-          -Providing tips on the local culture and student life in your new
-          country
         </p>
-        <br />
-        </div>
       </div>
-      <div class="what_we_do_line"></div>
+    </div>
+    </div>
 
-      <!-- service 2 -->
-      <div class="services">
-        <div class="services_title">
-          <h3>Foundation Year</h3>
-          <a id="button2"><img src="./assets/icon1.png" alt="icon" /></a>
-        </div>
+    <div class="divider"></div>
 
-        <p class="service_text second">
+
+    <!-- service 2 -->
+    <div class="services">
+      <div class="trigger">
+        <h3>Foundation Year</h3>
+        <p class="service_text ">
           Our expert counsellors are always on hand to help you with every
           aspect of your university application. We offer support throughout the
           entire process and can help you regardless of the stage you are at. by
           offering
-          <br />
-           -Face-to-face OR online meetings with professional consultant to
-          discuss your education plans
-          <br />
-          -Providing all education possibilities that fit your experience
-          and future career
-          <br />
-          -Help with filling up the admission application
-          <br />
-          -Guiding with preparation of required documents
-          <br />
-          -Review and edit your CV
-          <br />
-          -Review and edit your cover letter
-          <br />
-          -Interview coaching
-          <br />
-          -Providing tips on the local culture and student life in your new
-          country
         </p>
-        <br />
       </div>
-      <div class="what_we_do_line"></div>
+    </div>
+    <div class="divider"></div>
 
-      <!-- service 3 -->
-      <div class="services">
-        <div class="services_title">
-          <h3>Group Trip & Individuals</h3>
-          <a id="button3"><img src="./assets/icon1.png" alt="icon" /></a>
-        </div>
-
-        <p class="service_text third">
-           Our expert counsellors are always on hand to help you with every
-          aspect of your university application. We offer support throughout the
-          entire process and can help you regardless of the stage you are at. by
-          offering
-          <br />
-           -Face-to-face OR online meetings with professional consultant to
-          discuss your education plans
-          <br />
-          -Providing all education possibilities that fit your experience
-          and future career
-          <br />
-          -Help with filling up the admission application
-          <br />
-          -Guiding with preparation of required documents
-          <br />
-          -Review and edit your CV
-          <br />
-          -Review and edit your cover letter
-          <br />
-          -Interview coaching
-          <br />
-          -Providing tips on the local culture and student life in your new
-          country
-        </p>
-        <br />
-      </div>
-      <div class="what_we_do_line"></div>
-
-      <!-- service 4 -->
-      <div class="services">
-        <div class="services_title">
-          <h3>Summer Camp</h3>
-          <a id="button4"><img src="./assets/icon1.png" alt="icon" /></a>
-        </div>
-        <p class="service_text fourth">
+    <!-- service 3 -->
+    <div class="services">
+      <div class="trigger">
+        <h3>Group Trip & Individuals</h3>
+        <p class="service_text ">
           Our expert counsellors are always on hand to help you with every
           aspect of your university application. We offer support throughout the
           entire process and can help you regardless of the stage you are at. by
           offering
-         Our expert counsellors are always on hand to help you with every
+        </p>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- service 4 -->
+    <div class="services">
+      <div class="trigger">
+        <h3>Summer Camp</h3>
+        <p class="service_text ">
+          Our expert counsellors are always on hand to help you with every
           aspect of your university application. We offer support throughout the
           entire process and can help you regardless of the stage you are at. by
           offering
-          <br />
-           -Face-to-face OR online meetings with professional consultant to
-          discuss your education plans
-          <br />
-          -Providing all education possibilities that fit your experience
-          and future career
-          <br />
-          -Help with filling up the admission application
-          <br />
-          -Guiding with preparation of required documents
-          <br />
-          -Review and edit your CV
-          <br />
-          -Review and edit your cover letter
-          <br />
-          -Interview coaching
-          <br />
-          -Providing tips on the local culture and student life in your new
-          country
         </p>
-        <br />
       </div>
-    </section>
 
-    <!-- client review -->
-    <section class="reviews">
-      <div class="review_container">
-        <img id="quotes" src="./assets/quotes.png" alt="quotes" />
-        <!-- review 1 -->
-        <div class="review first">
-          <div class="review_title">
-            <h3></h3>
-            <h4>Postgraduated Student</h4>
-          </div>
-          <p class="review_text">
-            “ I
-            <span>enjoyed</span>
-            the experience at British corner agency. they choose the right
-            university for me and,took care of all the paperwork and facility my
-            experience in London ”
-          </p>
+    </div>
+  </section>
+  <!-- client review -->
+  <section id="reviews" class="reviews">
+    <div class="review_container">
+      <img id="quotes" src="./assets/quotes.png" alt="quotes" />
+      <!-- review 1 -->
+      <div class="review first">
+        <div class="review_title">
+          <h3>Iman</h3>
+          <h4>Postgraduated Student</h4>
         </div>
+        <p class="review_text">
+          “ I
+          <span>enjoyed</span>
+          the experience at British corner agency. they choose the right
+          university for me and,took care of all the paperwork and facility my
+          experience in London ”
+        </p>
+      </div>
 
-        <!-- review 2 -->
-        <!-- <div class="review second">
+      <!-- review 2 -->
+      <!-- <div class="review second">
           <div class="review_title">
             <h3>Omar</h3>
             <h4>Postgraduated Student</h4>
@@ -311,8 +213,8 @@
           </div>
         </div> -->
 
-        <!-- review 3 -->
-        <!-- <div class="review third">
+      <!-- review 3 -->
+      <!-- <div class="review third">
           <div class="review_title">
             <h3>Fatima</h3>
             <h4>Postgraduated Student</h4>
@@ -332,47 +234,53 @@
         <div class="review_line"></div>
         <div class="review_line"></div>
       </div> -->
-    </section>
+  </section>
 
-    <!-- footer -->
-    <footer>
-      <p class="footer_text">
-        take your education journey to the
-        <span>next level</span>
+  <!-- footer -->
+  <footer id="contact">
+    <p class="footer_text">
+      take your education journey to the
+      <span>next level</span>
+    </p>
+    <!-- <img src="./assets/Arrow 2.png" alt="arrow" /> -->
+    <h4>Get in touch !</h4>
+
+    <!-- email -->
+    <div class="get_in_touch">
+      <p>
+        Drope us an
+        <span>Email</span>
       </p>
-      <!-- <img src="./assets/Arrow 2.png" alt="arrow" /> -->
-      <h4>Get in touch !</h4>
+      <p>britishcorner@gmail.ma</p>
+    </div>
 
-      <!-- email -->
-      <div class="get_in_touch">
-        <p>
-          Drope us an
-          <span>Email</span>
-        </p>
-        <p>britishcorner@gmail.ma</p>
-      </div>
+    <!-- whatsaap -->
+    <div class="get_in_touch">
+      <p>
+        Call or Send a message on
+        <span>Whatsaap</span>
+      </p>
+      <p>+212 6123456789</p>
+    </div>
 
-      <!-- whatsaap -->
-      <div class="get_in_touch">
-        <p>
-          Call or Send a message on
-          <span>Whatsaap</span>
-        </p>
-        <p>+212 6123456789</p>
-      </div>
+    <!-- copyrights -->
+    <div class="copyright">
+      <p>
+        © 2020
+        <span>British Corner</span>
+      </p>
+      <p>
+        Created by
+        <span>@omar.code</span>
+      </p>
 
-      <!-- copyrights -->
-      <div class="copyright">
-        <p>
-          Created by
-          <span>@omar.code</span>
-        </p>
-        <p>
-          © 2020
-          <span>British Corner</span>
-        </p>
-      </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
