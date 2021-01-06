@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600;1,700; 1,800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600;1,700; 1,800&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>British Corner</title>
 </head>
 
@@ -181,59 +181,50 @@
   </section>
   <!-- client review -->
   <section id="reviews" class="reviews">
-    <div class="review_container">
-      <img id="quotes" src="./assets/quotes.png" alt="quotes" />
-      <!-- review 1 -->
-      <div class="review first">
-        <div class="review_title">
-          <h3>Iman</h3>
-          <h4>Postgraduated Student</h4>
+    <img id="quotes" src="./assets/quotes.png" alt="quotes" />
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="review_title">
+            <h3>Iman</h3>
+            <h4>Postgraduated Student</h4>
+          </div>
+          <p class="review_text">
+            “ I
+            <span>enjoyed</span>
+            the experience at British corner agency. they choose the right
+            university for me and,took care of all the paperwork and facility my
+            experience in London ”
+          </p>
         </div>
-        <p class="review_text">
-          “ I
-          <span>enjoyed</span>
-          the experience at British corner agency. they choose the right
-          university for me and,took care of all the paperwork and facility my
-          experience in London ”
-        </p>
-      </div>
-
-      <!-- review 2 -->
-      <!-- <div class="review second">
+        <div class="swiper-slide">
           <div class="review_title">
             <h3>Omar</h3>
             <h4>Postgraduated Student</h4>
           </div>
-          <div class="review_text">
+          <p class="review_text">
             “ I
             <span>enjoyed</span>
             the experience at British corner agency. they choose the right
             university for me and,took care of all the paperwork and facility my
-            experience in London”
-          </div>
-        </div> -->
-
-      <!-- review 3 -->
-      <!-- <div class="review third">
+            experience in London ”
+          </p>
+        </div>
+        <div class="swiper-slide">
           <div class="review_title">
             <h3>Fatima</h3>
             <h4>Postgraduated Student</h4>
           </div>
-          <div class="review_text">
+          <p class="review_text">
             “ I
             <span>enjoyed</span>
             the experience at British corner agency. they choose the right
             university for me and,took care of all the paperwork and facility my
-            experience in London”
-          </div>
+            experience in London ”
+          </p>
         </div>
-      </div> -->
-
-      <!-- <div class="review_lines">
-        <div class="review_line"></div>
-        <div class="review_line"></div>
-        <div class="review_line"></div>
-      </div> -->
+      </div>
+    </div>
   </section>
 
   <!-- footer -->
@@ -277,10 +268,22 @@
     </div>
   </footer>
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
   <script src="app.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    })
+  </script>
+
 </body>
 
 </html>

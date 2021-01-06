@@ -108,7 +108,6 @@ const navLinkTouched = () => {
       }
     });        
   });
-
 }  
   // services toggle
 const triggerText = () => {
@@ -127,6 +126,10 @@ const triggerText = () => {
      })
   })
 }
+
+
+
+
 
 // review carousel 
 
