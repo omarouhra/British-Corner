@@ -76,6 +76,7 @@ body {
   overflow: hidden;
   opacity: 0;
   font-size: 30px;
+  margin-right: 10px;
 }
 
 .nav-links li a {
