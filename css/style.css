@@ -261,11 +261,12 @@ body {
 
 /* about us section */
 .aboutUs_section {
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 100px;
+  gap:100px;
 }
 .aboutUs_line {
   width: 80px;
@@ -283,6 +284,7 @@ body {
 }
 .aboutUs_second_section {
   background-color: var(--primary);
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -536,6 +538,9 @@ footer h4 {
   .slogan_section p {
     font-size: 25px;
     width: 80%;
+  }
+  .aboutUs_section{
+    height: auto;
   }
   .aboutUs_second_section p {
     font-size: 25px;
