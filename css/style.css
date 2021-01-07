@@ -200,12 +200,14 @@ body {
   font-size: 12px;
   font-weight: 100;
   padding: 20px 20px;
-  border: none;
-  /* box-shadow: 25px 25px 50px rgb(190, 190, 190); */
+  border:none;
 }
 @keyframes glowing {
   0% { box-shadow: 0 0 -10px rgb(121, 121, 121); }
-  40% { box-shadow: 0 0 20px rgb(190, 190, 190); }
+  40% { box-shadow: 0 0 20px rgb(190, 190, 190);
+    transform: translateY(4px);
+    
+ }
   100% { box-shadow: 0 0 -10px rgb(190, 190, 190); }
 }
 
