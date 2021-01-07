@@ -465,7 +465,7 @@ body {
   color: white;
   font-weight: 100;
   font-style: italic;
-  text-align: center;
+  text-align: start;
   line-height: 134%;
   width:80%;
   margin:30px auto;
@@ -503,7 +503,7 @@ footer {
 footer h4 {
   font-size: 24px;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -620,8 +620,8 @@ footer h4 {
   #contact_button :hover {
     background-color: var(--primary);
   }
-  .swiper-slide{
-    width: 100%;
+  .slide p {
+    text-align: center;
   }
 
   .burger {
