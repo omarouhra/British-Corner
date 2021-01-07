@@ -330,19 +330,21 @@ body {
 }
 .service_text {
   margin-top: 50px;
-  height: 0px;
+  height: 0;
   line-height: 170%;
   font-weight: 300;
   padding-bottom: 0;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ;
-  position: relative;
-}
-.service_text img{
 }
 
-.service_text--visible {
+.service_text a{
+  color: var(--primary);
+  height:0;
+}
+
+.service_text--visible,.service_text--visible a {
   opacity: 1;
   height:auto;
   visibility: visible;
@@ -358,7 +360,6 @@ body {
   cursor: pointer;
   padding-bottom: 10px;
   user-select: none;
-
 }
 .trigger::after {
   content: '\25BE';
@@ -371,6 +372,7 @@ body {
 }
 .trigger--active::after{
   transform: rotate(-180deg);
+  height: auto;
 }
 .trigger h3 {
   font-size: 20px;
@@ -380,7 +382,7 @@ body {
   font-weight: 900;
 }
 .trigger a {
-  float: right;
+  /* float: right; */
   top:0;
 }
 
@@ -458,7 +460,6 @@ body {
   color: grey;
 }
 .slide p {
-  margin-top: 30px;
   font-size: 25px;
   justify-content: center;
   color: white;
@@ -466,11 +467,16 @@ body {
   font-style: italic;
   text-align: center;
   line-height: 134%;
-  width:auto;
+  width:80%;
+  margin:30px auto;
 
 }
 .review_text span {
   font-weight: 700;
+  text-align:justify;
+}
+.carousel{
+  max-width: 1200px;
 }
 
 /* footer */
