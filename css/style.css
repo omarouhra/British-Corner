@@ -337,6 +337,9 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ;
+  position: relative;
+}
+.service_text img{
 }
 
 .service_text--visible {
