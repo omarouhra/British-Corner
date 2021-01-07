@@ -468,11 +468,12 @@ body {
 
 /* footer */
 footer {
+  min-height: 100vh;
   background-color: var(--primary);
   padding: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  justify-content:  space-evenly;
 }
 .footer_text {
   font-size: 30px;
