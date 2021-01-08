@@ -204,6 +204,7 @@ body {
   font-weight: 100;
   padding: 20px 20px;
   border:none;
+  cursor: pointer;
 }
 @keyframes glowing {
   0% { box-shadow: 0 0 -10px rgb(121, 121, 121); }
